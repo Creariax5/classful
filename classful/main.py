@@ -1,6 +1,5 @@
-from flask import Flask
-app = Flask(__name__)
+from web_server import WebServer
 
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
+
+web_server = WebServer("127.0.0.1", 5500)
+web_server.run()
