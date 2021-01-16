@@ -28,4 +28,4 @@ class WebServer:
 
     def run(self):
         self.load_routes_modules()
-        self.app.run(port=self.port, host=self.host)
+        self.app.run(port=self.port, host=self.host, debug=True)
